@@ -41,6 +41,7 @@ I am not good at piping.
 
 ## TODO
 
+- Get some quick performance metrics up (e.g. mean intra-pair contour similarity score for matching, ??? for actual contour detection?)
 - Corral experimental notebook code into proper architecture
 - Write CLI tool for simpler desktop testing
 - Unit tests for components

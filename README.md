@@ -1,6 +1,6 @@
 # macaron-match
 
-One of the key steps in baking macarons is to match top and bottom shells to each other, usually by shape and size and with a lot of guesswork. If you are good at piping, the shells should be fairly consistent and easy to match.
+One of the key steps in baking macarons is to match top and bottom shells to each other, usually by shape and size and with a lot of guesswork. If you are good at piping, the shells should be fairly consistent in size and shape and therefore easy to match.
 
 I am not good at piping.
 
@@ -34,6 +34,17 @@ I am not good at piping.
 </p>
 
 <p align="center">
-    <img src="images/01-ra.png" /><br>
+    <img src="images/04-matched.png" /><br>
     <i>Simple baseline matches based on contour area</i>
 </p>
+
+
+## TODO
+
+- Corral experimental notebook code into proper architecture
+- Write CLI tool for simpler desktop testing
+- Unit tests for components
+- Deployment considerations
+    - Do I have to rewrite this in Java?
+    - Does Kotlin even support OpenCV?
+    - Alternatively keep the backend in Python, slap an API on it, self-host, then write a barebones JS webapp to make requests that I can submit from my phone. No custom app to access camera functionality necessary; can just look in device's image folders for now.

@@ -20,7 +20,7 @@ I am not good at piping.
 
 <p align="center">
     <img src="images/01-raw.png" /><br>
-    <i>Input image</i>
+    <i>Input image ([source](https://newsaxes.com/newbies-information-to-french-macarons-sallys-baking-habit/))</i>
 </p>
 
 <p align="center">

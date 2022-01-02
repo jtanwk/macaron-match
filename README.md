@@ -1,6 +1,6 @@
 # macaron-match
 
-One of the key steps in baking macarons is to match top and bottom shells to each other, usually by shape and size and with a lot of guesswork. If you are good at piping, the shells should be fairly consistent in size and shape and therefore easy to match.
+One of the key steps in baking macarons is to match top and bottom shells to each other, usually with a lot of guesswork. If you are good at piping, the shells should be fairly consistent in size and shape and therefore easy to match.
 
 I am not good at piping.
 
@@ -41,6 +41,7 @@ I am not good at piping.
 
 ## TODO
 
+- Get some quick performance metrics up (e.g. mean intra-pair contour similarity score for matching, ??? for actual contour detection?)
 - Corral experimental notebook code into proper architecture
 - Write CLI tool for simpler desktop testing
 - Unit tests for components

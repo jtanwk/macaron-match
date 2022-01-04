@@ -126,6 +126,7 @@ class Matcher:
     def draw_contours(self, cnt: List[np.ndarray], out_name: str, num: bool = False):
 
         # Draw contours
+        plt.figure(figsize=self.figsize)
         im_temp = self.im_rgb.copy()
         cv2.drawContours(im_temp, cnt, -1, self.line_color, self.line_thickness)
 
@@ -151,8 +152,8 @@ class Matcher:
                 )
 
         # Plot and save figure
-        plt.figure(figsize=self.figsize)
         output_name = os.path.join(self.out_dir, out_name)
+        plt.imshow(im_temp)
         plt.savefig(output_name)
 
         return self
@@ -168,6 +169,7 @@ class Matcher:
 
     def draw_paired_contours(self, out_name: str):
 
+        plt.figure(figsize=self.figsize)
         im_temp = self.im_rgb.copy()
         cmap = matplotlib.cm.get_cmap("Dark2")
 
@@ -194,8 +196,8 @@ class Matcher:
                     lineType=self.line_type,
                 )
 
-        plt.figure(figsize=self.figsize)
         output_name = os.path.join(self.out_dir, out_name)
+        plt.imshow(im_temp)
         plt.savefig(output_name)
         print(f"Matches saved to f{output_name}")
 
